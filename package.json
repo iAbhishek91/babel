@@ -4,14 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "babel": "babel src -d dist"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel": "babel src -d dist --source-maps",
+    "babel:watch": "babel src -w -d dist",
+    "node" : "node --enable-source-maps dist/importExport/exportVariable.js"
   },
   "dependencies": {
     "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3"
   }
 }

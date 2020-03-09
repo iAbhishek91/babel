@@ -1,10 +1,10 @@
 {
   "presets": [
-    ["env", {
+    ["@babel/env", {
       "targets": {
         "node": "current"
       }
     }],
-    "react"
+    "@babel/react"
   ]
 }
